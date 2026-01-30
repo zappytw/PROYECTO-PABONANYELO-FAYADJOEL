@@ -52,7 +52,7 @@ body{
     flex-direction: column;
 }
 * {
-    outline: 1px solid red;
+    outline: 0px solid red;
 }
 .perfil {
     display: flex;
@@ -90,22 +90,28 @@ p{
     font-family: "Roboto", sans-serif;
     justify-self: center;
 }
+h3 {
+    font-family: "Roboto", sans-serif;
+    justify-self: center;
+}
 .barradecategorias {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     width: 86vw;
     justify-self: center;
-    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 2fr 2fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr ;
 }
 .indicadores{
     border: 2px solid gray;
     display: grid;
-    justify-content: left;
+    justify-items: center;
     border-radius: 20px;
     width: 86vw;
     color: rgb(44, 44, 44);
     font-weight: 400;
-    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 2fr 2fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr ;
+    height: 6.5vh;
+    align-items: center;
 }
 
 .contenedorindicadores {
@@ -137,10 +143,6 @@ p{
     justify-self: center;
 }
 .circulorojo {
-    background: conic-gradient(
-        red 0% 31%,
-        white 31% 100%
-    );
     border-radius:100%;
     width: 50px;
     height: 50px;
@@ -149,10 +151,6 @@ p{
     align-items: center;
 }
 .circuloverde{
-    background: conic-gradient(
-        rgb(20, 243, 0) 0% 31%,
-        white 31% 100%
-    );
     border-radius:100%;
     width: 50px;
     height: 50px;
@@ -161,10 +159,6 @@ p{
     align-items: center;
 }
 .circuloamarillo{
-    background: conic-gradient(
-        white 0% 5%,
-        rgb(255, 187, 0) 5% 90%
-    );
     border-radius:100%;
     width: 50px;
     height: 50px;
@@ -181,4 +175,40 @@ p{
     align-items: center;
     display: flex;
     font-family: "Roboto", sans-serif;
+}
+#p31 {
+    background: conic-gradient(
+        red 0% 31%,
+        rgb(226, 226, 226) 31% 100%
+    );
+}
+#p25 {
+    background: conic-gradient(
+        lime 0% 25%,
+        rgb(226, 226, 226) 25% 100%
+    );
+}
+#p80 {
+    background: conic-gradient(
+        lime 0% 80%,
+        rgb(226, 226, 226) 80% 100%
+    );
+}
+#p32 {
+    background: conic-gradient(
+        red 0% 32%,
+        rgb(226, 226, 226) 32% 100%
+    );
+}
+#p95 {
+    background: conic-gradient(
+        lime 0% 95%,
+        rgb(226, 226, 226) 95% 100%
+    );
+}
+#p75 {
+    background: conic-gradient(
+        gold 0% 75%,
+        rgb(226, 226, 226)   75% 100%
+    );
 }
