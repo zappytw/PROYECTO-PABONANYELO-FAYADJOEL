@@ -28,7 +28,7 @@ nav {
     align-items: end;
     justify-content: space-between;
     display: flex;
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid gray;
 
 }
 .anteslogo {
@@ -52,7 +52,7 @@ body{
     flex-direction: column;
 }
 * {
-    outline: 0  px solid red;
+    outline: 1px solid red;
 }
 .perfil {
     display: flex;
@@ -91,14 +91,94 @@ p{
     justify-self: center;
 }
 .barradecategorias {
-    display: flex;
-    justify-content: space-around;
-    width: 99vw;
+    display: grid;
+    justify-content: center;
+    width: 86vw;
+    justify-self: center;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
 }
-.indicador{
+.indicadores{
     border: 2px solid gray;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    justify-content: left;
     border-radius: 20px;
-    width: 50vw;
+    width: 86vw;
+    color: rgb(44, 44, 44);
+    font-weight: 400;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.contenedorindicadores {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 12px;
+}
+.arrastrable {
+    justify-self: center;
+    align-self: center;
+    margin-left: 10px ;
+
+
+}
+.contenedorbarradecategorias {
+    width: 100vw;
+    display: flex;
+    direction: row;
+    justify-content: center;
+}
+#arrastrableinvisible {
+    opacity: 0;
+    margin-left: 10px;
+}
+.centrar {
+    justify-self: center;
+}
+.circulorojo {
+    background: conic-gradient(
+        red 0% 31%,
+        white 31% 100%
+    );
+    border-radius:100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circuloverde{
+    background: conic-gradient(
+        rgb(20, 243, 0) 0% 31%,
+        white 31% 100%
+    );
+    border-radius:100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circuloamarillo{
+    background: conic-gradient(
+        white 0% 5%,
+        rgb(255, 187, 0) 5% 90%
+    );
+    border-radius:100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circuloblanco {
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "Roboto", sans-serif;
 }
