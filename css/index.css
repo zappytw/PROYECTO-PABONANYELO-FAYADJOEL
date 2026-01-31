@@ -1,0 +1,41 @@
+body{
+    background-image: url(../media/pexels-pixabay-159400@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;       
+  }
+  
+  .item {
+    width: 200px;
+    animation: intro 5s ease;
+    
+  }
+
+  @keyframes intro {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0;
+    }
+  
+    85% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
