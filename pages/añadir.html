@@ -1,99 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Añadir Indicador</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
     <link rel="stylesheet" href="../css/añadir.css">
-
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="media/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+<nav>
+    <a class="añadir" href="./añadir.html"><img src="../media/Group 3.svg" alt=""> Añadir</a>
+    <a class="refrescar"><img src="../media/Icon open-reload.svg" alt=""> Refrescar</a>
+    <a class="eliminar" href="./eliminar.html"><img src="../media/Icon material-delete-forever.svg" alt=""> Eliminar</a>
+    <a href="./pagprincipal.html"><img src="../media/kario sin kairo.svg" class="logonav" alt=""></a>
+    <a class="reportar"><img src="../media/Icon material-bug-report.svg" alt=""> Reportar</a>
+    <a class="ayuda"><img src="../media/question.svg" alt=""> Ayuda</a>
+    <div class="perfil">
+        <button><img src="../media/Icon ionic-ios-settings.svg" alt=""></button>
+        <button><img src="../media/Icon material-notifications-active.svg" alt=""></button>
+        <button class="usuario"><img src="../media/pp.png" alt=""></button>
+    </div>
+</nav>
+<header>
+    <h1>Añadir Indicador</h1>
+    <p>Completa la información para registrar un nuevo indicador.</p>
+</header>
 
-    <nav>
-        <a class="añadir" href="./añadir.html"><img src="../media/Group 3.svg" alt=""> Añadir</a>
-        <a class="refrescar"><img src="../media/Icon open-reload.svg" alt=""> Refrescar</a>
-        <a class="eliminar" href="./eliminar.html"><img src="../media/Icon material-delete-forever.svg" alt=""> Eliminar</a>
-        <a href="./pagprincipal.html"><img src="../media/kario sin kairo.svg" class="logonav" alt=""></a>
-        <a class="reportar"><img src="../media/Icon material-bug-report.svg" alt=""> Reportar</a>
-        <a class="ayuda"><img src="../media/question.svg" alt=""> Ayuda</a>
-        <div class="perfil">
-            <button><img src="../media/Icon ionic-ios-settings.svg" alt=""></button>
-            <button><img src="../media/Icon material-notifications-active.svg" alt=""></button>
-            <button class="usuario"><img src="../media/pp.png" alt=""></button>
+<main class="paginaañadir">
+
+    <form class="formañadir"action="pagprincipal.html">
+
+        <div class="campo">
+            <label>Nombre del indicador</label>
+            <input type="text" placeholder="Ej. Modelado 3D">
         </div>
-    </nav>
 
-    <header>
-        <h1>Añadir Indicador</h1>
-        <p>Completa la información del nuevo indicador. Esta vista es solo demostrativa.</p>
-    </header>
+        <div class="campo">
+            <label>Descripción</label>
+            <input type="text" placeholder="Breve descripción">
+        </div>
 
-    <main class="contenedor-formulario">
+        <div class="campo">
+            <label>Categoría</label>
+            <select>
+                <option>Baja</option>
+                <option>Media</option>
+                <option>Alta</option>
+            </select>
+        </div>
 
-        <section class="formulario">
-            <div class="campo">
-                <label>Nombre del indicador</label>
-                <input type="text" placeholder="Ej: Modelado 3D">
-            </div>
+        <div class="campo">
+            <label>Fecha de inicio</label>
+            <input type="date">
+        </div>
 
-            <div class="campo">
-                <label>Descripción</label>
-                <textarea placeholder="Describe el indicador..."></textarea>
-            </div>
+        <div class="campo">
+            <label>Fecha de terminación</label>
+            <input type="date">
+        </div>
 
-            <div class="fila">
-                <div class="campo">
-                    <label>Categoría</label>
-                    <select>
-                        <option>Baja</option>
-                        <option>Media</option>
-                        <option>Alta</option>
-                    </select>
-                </div>
+        <div class="campo">
+            <label>Fórmula</label>
+            <input type="text" placeholder="Ej. Met. Ágil">
+        </div>
 
-                <div class="campo">
-                    <label>Área</label>
-                    <select>
-                        <option>Marketing</option>
-                        <option>Diseño</option>
-                        <option>Producción</option>
-                        <option>Gerencia</option>
-                    </select>
-                </div>
-            </div>
+        <div class="campo">
+            <label>Frecuencia</label>
+            <input type="text" placeholder="Ej. 1/4">
+        </div>
+        <div class="campo">
+            <label>Área</label>
+            <input type="text" placeholder="Ej. Marketing">
+        </div>
+        <div class="divboton">
+            <button type="submit">Guardar Indicador</button>
+        </div>
 
-            <div class="fila">
-                <div class="campo">
-                    <label>Fecha de inicio</label>
-                    <input type="date">
-                </div>
+    </form>
 
-                <div class="campo">
-                    <label>Fecha de terminación</label>
-                    <input type="date">
-                </div>
-            </div>
-
-            <div class="fila">
-                <div class="campo">
-                    <label>Fórmula</label>
-                    <input type="text" placeholder="Ej: Met. Ágil">
-                </div>
-
-                <div class="campo">
-                    <label>Frecuencia</label>
-                    <input type="text" placeholder="Ej: 1/4">
-                </div>
-            </div>
-
-            <div class="acciones">
-                <button class="btn-secundario">Cancelar</button>
-                <button class="btn-primario">Guardar indicador</button>
-            </div>
-        </section>
-
-    </main>
+</main>
 
 </body>
 </html>

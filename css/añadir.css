@@ -1,67 +1,107 @@
-.contenedor-formulario {
+main button {
+    background-color: orangered;
+    color: white;
+    border: 0px;
+    border-radius: 100px;
+    width: 250px;
+    height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    transition: ease 0.1s;
+}
+.buttondiv {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
-    padding: 40px 20px;
+    margin-top: 30px;
+}
+main button:hover {
+    background-color: rgb(202, 54, 0);
+    transform: scale(1.05);
+}
+main button:active {
+    background-color:rgb(168, 45, 0) ;
+    transform: scale(0.95);
+}
+.paginaañadir {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
 }
 
-.formulario {
-    width: 100%;
-    max-width: 800px;
-    background: #fff;
+
+.formañadir {
+    width: 70%;
+    max-width: 900px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 20px;
     padding: 30px;
-    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
 }
+
 
 .campo {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
+
 
 .campo label {
     font-weight: 500;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
+
 
 .campo input,
-.campo textarea,
 .campo select {
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-family: Roboto, sans-serif;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 0 10px;
+    font-family: "Roboto", sans-serif;
 }
 
-textarea {
-    resize: none;
-    height: 90px;
-}
 
-.fila {
+.divboton {
+    grid-column: span 2;
     display: flex;
+    justify-content: center;
     gap: 20px;
-}
-
-.acciones {
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
     margin-top: 20px;
 }
 
-.btn-primario {
-    background: #4f46e5;
+
+.divboton button {
+    background-color: orangered;
     color: white;
     border: none;
-    padding: 10px 18px;
-    border-radius: 8px;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
     cursor: pointer;
 }
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
 
-.btn-secundario {
-    background: #e5e7eb;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 8px;
-    cursor: pointer;
+.divboton .cancelar {
+    background-color: gray;
+}
+@media screen and (max-width:768px){
+.formañadir {
+    grid-template-columns: 1fr !important;
+}
+.divboton {
+    grid-column: span 1;
+}
 }
