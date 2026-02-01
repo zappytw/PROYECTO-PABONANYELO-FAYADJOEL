@@ -9,30 +9,29 @@
 </head>
 <body>
     <nav>
-            <a class="añadir" href="./añadir.html"><img src="../media/Group 3.svg" alt=""> Añadir</a>
-            <a class="refrescar"><img src="../media/Icon open-reload.svg" alt=""> Refrescar</a>
-            <a class="eliminar" href="./eliminar.html"><img src="../media/Icon material-delete-forever.svg" alt=""> Eliminar</a>
-            <a href="./pagprincipal.html"v><img src="../media/kario sin kairo.svg" class="logonav" alt=""></a>
-            <a class="reportar"><img src="../media/Icon material-bug-report.svg" alt=""> Reportar</a>
-            <a class="ayuda"><img src="../media/question.svg" alt=""> Ayuda</a>
-            <div class="perfil">
-                <button>
-                    <img src="../media/Icon ionic-ios-settings.svg" alt="">
-                </button>
-                <button>
-                    <img src="../media/Icon material-notifications-active.svg" alt="">
-                </button>
-                <button class="usuario">
-                    <img src="../media/pp.png" alt="">
-                </button>
-            </div>
+        <a class="añadir" href="./añadir.html"><img src="../media/Group 3.svg" alt=""><span>Añadir</span></a>
+        <a class="refrescar"><img src="../media/Icon open-reload.svg" alt=""> <span>Refrescar</span></a>
+        <a class="eliminar" href="./eliminar.html"><img src="../media/Icon material-delete-forever.svg" alt=""> <span>Eliminar</span></a>
+        <a href="./pagprincipal.html"v><img src="../media/kario sin kairo.svg" class="logonav" alt=""></a>
+        <a class="reportar"><img src="../media/Icon material-bug-report.svg" alt=""> <span>Reportar</span></a>
+        <a class="ayuda"><img src="../media/question.svg" alt=""> <span>Ayuda</span></a>
+        <div class="perfil">
+            <button>
+                <img src="../media/Icon ionic-ios-settings.svg" alt="">
+            </button>
+            <button>
+                <img src="../media/Icon material-notifications-active.svg" alt="">
+            </button>
+            <button class="usuario">
+                <img src="../media/pp.png" alt="">
+            </button>
         </div>
     </nav>
     <header>
         <H1>Panel de Indicadores</H1>
         <p>Aqui puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo.</p>
     </header>
-    <main>
+    <main class="pagina">
         <div class="contenedorbarradecategorias">
             <div class="barradecategorias">
                 <h3>Indicador</h3>
@@ -143,6 +142,10 @@
             </div>
             <img class="arrastrable" src="../media/Repeat Grid 3.svg" draggable="true" alt="">
         </div>
+        <div class="divboton">
+            <button class="btnañadir" onclick="window.location.href='añadir.html'">Añadir Elementos </button>
+        </div>
+        
     </main>
 
 </body>

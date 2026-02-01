@@ -1,6 +1,6 @@
 .delete-page {
     font-family: 'Roboto', sans-serif;
-    background: #f8fafc;
+    background: #ffffff;
     min-height: calc(100vh - 80px);
     padding: 40px 20px;
 }
@@ -16,10 +16,9 @@
 }
 
 .delete-header p {
-    color: #64748b;
+    color: #000000;
 }
 
-/* Card */
 .delete-card {
     max-width: 800px;
     margin: 0 auto;
@@ -27,9 +26,9 @@
     border-radius: 12px;
     padding: 24px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border: 1px solid gray;
 }
 
-/* Indicator row */
 .indicator {
     display: flex;
     justify-content: space-between;
@@ -46,7 +45,6 @@
     font-size: 1rem;
 }
 
-/* Button */
 .btn-delete {
     background: #dc2626;
     color: white;
@@ -61,7 +59,6 @@
     background: #b91c1c;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
     .indicator {
         flex-direction: column;
