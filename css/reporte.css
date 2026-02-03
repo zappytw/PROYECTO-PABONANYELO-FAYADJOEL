@@ -1,182 +1,139 @@
-*{
-    font-family: "Roboto", sans-serif;
-}
-nav img {
-    width:25px;
-    height: 25px;
-}
-nav a {
-    position: relative;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    align-items:center;
-    color: black;
-    font-weight:450;
-    gap: 5px;
-    font-size: 18px !important;
-    transition: ease 0.1s;
-}
-nav a:hover {
-    transform:scale(1.10);
-}
-.logonav{
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    justify-self: center;
-}
-
-nav {
-    background-color: rgb(255, 255, 255);
-    top:0;
-    width: 100%;
-    height: 60px;
-    align-items: center;
-    justify-content:space-around;
-    display: flex;
-    border-bottom: 2px solid gray;
-    padding-top: 10px;
-
-}
-.anteslogo {
-    display: flex;
-    justify-content:space-around;
-    flex: 1;
-    margin-bottom: 15px;
-}
-.despueslogo {
-    display: flex;
-    justify-content: space-around;
-    width:auto; 
-    flex: 1;
-    align-items: end;
-    padding-bottom: 15px;
-
-}
-body{
+body {
     margin: 0;
     display: flex;
     flex-direction: column;
 }
-* {
-    outline: 0px solid red;
-}
 .perfil {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 20px;
-    margin: 10px;
+    gap: 12px;
+    margin: 0;
 }
+
 .perfil img {
     width: 20px;
     height: 20px;
 }
-.usuario img  {
-    width: 50px;
-    height: 50px;
-}
+
 .perfil button {
     width: fit-content;
     height: fit-content;
-    padding:0;
+    padding: 0;
     margin: 0;
-    background-color: transparent;
+    background: transparent;
     border-radius: 100%;
     border: none;
 }
-.añadir, .refrescar, .eliminar, .reportar, .ayuda {
-    margin: 20px 0;
-}
 
-h1{
+
+h1 {
     text-align: center;
-    margin-top: 3vw;
+    margin: 18px 12px 0;
 }
 
-.main-container{
-    background-color: #ffffff;
+.main-container {
+    background-color: #fff;
     box-shadow: gray 1px 1px 10px 1px;
-    margin: auto;
-    width: 30vw;
-    height: 30vw;
-    padding: 1vw;
-    align-self: center;
-    align-items: center;
-    align-content: center;
-    border-radius: 40px;
+    width: min(92vw, 600px); 
+    min-height: 300px;
+    height: auto;
+    padding: 18px;
+    border-radius: 28px;
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px auto 24px;
 }
 
-.icon{
+.item-container {
+    width: 100%;
+    max-width: 520px;
+}
+
+.icon {
     max-width: 64px;
     max-height: 64px;
-    margin-bottom: 1vw;
+    margin-bottom: 12px;
 }
 
-label{
-    margin-top: 2vw;
-    display: flex;
+
+label {
+    display: block;     
+    text-align: left;
+    font-weight: 500;
 }
 
-textarea{
-    margin-top: 0.1vw;
-    width: 27.7vw;
-    height: 10vw;
-    border-radius: 20px;
-    border: 0.1px solid ;
-    padding: 0.5vw;
+textarea {
+    margin-top: 10px;
+    width: 90%;
+    min-height: 120px;
+    resize: vertical;
+
+    border-radius: 16px;
+    border: 1px solid #bbb;
+    padding: 12px;
+
+    font-size: 16px;
 }
 
-.button{
+.button {
     text-decoration: none;
     color: white;
     background-color: #ff6a00;
-    border-radius: 20px;
-    height: 2.2vw;
-    width: 15vw;
-    align-content: center;
-    border: none;
+
+    border-radius: 16px;
+    height: 44px;
+
+    width: 100%;
+    max-width: 240px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 16px auto 0;
     cursor: pointer;
     transition: 0.2s ease;
-    display: block;
-    margin: 2vw auto;
-    
 }
 
-.button:hover{
-    transform:translateY(-5px);
+.button:hover {
+    transform: translateY(-3px);
 }
 
-.button:active{
+.button:active {
     background-color: #e2660d;
-}
-
-@media (max-width: 327px) {
-    .main-container{
-        height: 80vw;
-
-    }
-
-    .icon{
-        max-width: 32px;
-        max-height: 32px;
-    }
-
-    textarea{
-        height: 2vw;
-    }
+    transform: translateY(0);
 }
 
 @media (max-width: 768px) {
-    .main-container{
-        height: 50vw;
-
+    nav a {
+    font-size: 16px;
     }
 
-    textarea{
-        height: 2vw;
+    .main-container {
+    border-radius: 22px;
+    padding: 16px;
+    min-height: 280px;
+    }
+
+    .icon {
+    max-width: 48px;
+    max-height: 48px;
+    }
+}
+
+@media (max-width: 378px) {
+    .main-container {
+    width: 94vw;
+    padding: 14px;
+    min-height: 260px;
+    border-radius: 18px;
+    }
+    textarea {
+    min-height: 140px;
+    }
+    .button {
+    max-width: 100%;
     }
 }

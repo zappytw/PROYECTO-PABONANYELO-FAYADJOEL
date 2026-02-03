@@ -35,7 +35,7 @@ main button:active {
     width: 70%;
     max-width: 900px;
     background-color: white;
-    border: 2px solid gray;
+    box-shadow: 0 0 10px gray;
     border-radius: 20px;
     padding: 30px;
     display: grid;
@@ -96,6 +96,7 @@ header {
 
 .divboton .cancelar {
     background-color: gray;
+
 }
 @media screen and (max-width:768px){
 .formañadir {
