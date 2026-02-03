@@ -9,10 +9,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon-16x16.png">
     <link rel="manifest" href="../media/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 <body>
     <nav>
+        <input class="chek" type="checkbox" id="botonperfil">
         <a class="añadir" href="./añadir.html"><img src="../media/Group 3.svg" alt=""><span>Añadir</span></a>
         <a class="refrescar"><img src="../media/Icon open-reload.svg" alt=""> <span>Refrescar</span></a>
         <a class="eliminar" href="./eliminar.html"><img src="../media/Icon material-delete-forever.svg" alt=""> <span>Eliminar</span></a>
@@ -26,16 +28,26 @@
             <button>
                 <img src="../media/Icon material-notifications-active.svg" alt="">
             </button>
-            <button class="usuario">
-                <img src="../media/pp.png" alt="">
-            </button>
+            <label for="botonperfil">
+                <img src="../media/pp.png" alt="" class="usuario">
+            </label>
+                
+            
         </div>
         <div class="perfildiv">
             <img src="../media/pp@2x.png" alt="">
             <h4>Pedro Felipe Gomez Bonilla</h4>
             <hr>
-            <a href="">Perfil</a>
 
+            <a href=""><i class="fa-solid fa-user"></i>Perfil</a>
+            <a href=""><i class="fa-solid fa-gear"></i>Ajustes</a>
+            <a href=""><i class="fa-solid fa-bell"></i>Notificaciones</a>
+            <a href=""><i class="fa-solid fa-paintbrush"></i>Apariencia</a>
+            <a href=""><i class="fa-solid fa-person"></i>Accesibilidad</a>
+            <hr>
+            <a href=""><i class="fa-solid fa-user-plus"></i> Agregar Cuenta</a>
+            <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar Sesión</a>
+            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i>Cambiar de Cuenta</a>
         </div>
     </nav>
     <header>
