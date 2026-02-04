@@ -101,8 +101,13 @@ header {
 @media screen and (max-width:768px){
 .formañadir {
     grid-template-columns: 1fr !important;
+    width: 80vw;
 }
 .divboton {
     grid-column: span 1;
 }
+.divboton button {
+    width: 50vw;
 }
+}
+

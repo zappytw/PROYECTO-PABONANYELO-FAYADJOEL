@@ -80,6 +80,8 @@ body{
 #botonperfil:checked~.perfildiv{
     opacity: 1;
     pointer-events: all;
+    scale: 1;
+    translate: 0px;
 
 }
 .chek {
@@ -266,6 +268,9 @@ h3 {
     opacity: 0;
     pointer-events: none;
     z-index: 2000; 
+    margin-right: 10px;
+    transition: ease 0.5s;
+    translate: 500px;
 
 }
 .perfildiv img{
