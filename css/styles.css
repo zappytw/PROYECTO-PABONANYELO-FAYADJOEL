@@ -301,34 +301,28 @@ h3 {
 .perfildiv i {
 margin-right: 7px;
 }
+
 @media (max-width: 768px) {
-    nav a span {
-    display: none;
+    .ocultable,  .circuloamarillo, .circulorojo, .circuloblanco, .circuloverde {
+        display: none;
+        position: absolute;
     }
-    .barradecategorias {
-    display: none;
-    }
-    .contenedorindicadores {
-    grid-template-columns: 1fr;
-    }
+    .barradecategorias,
     .indicadores {
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        padding: 15px;
-        height: auto;
-        text-align: left;
+        grid-template-columns: 2fr 2fr 1fr 1fr 2fr;
     }
-    .indicadores p {
-    justify-self: start;
+
+    nav a span {
+        display: none;
     }
-    .indicadores p:nth-child(1) {
-    grid-column: span 2;
-    font-weight: bold;
+}
+@media (max-width: 500px) {
+    .ocultable2{
+        display: none;
+        position: absolute;
     }
-    .circulorojo,
-    .circuloverde,
-    .circuloamarillo {
-    grid-column: span 2;
-    justify-self: center;
+    .barradecategorias,
+    .indicadores {
+        grid-template-columns: 2fr 2fr 1fr 1fr;
     }
 }
