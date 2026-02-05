@@ -269,8 +269,7 @@ h3 {
     pointer-events: none;
     z-index: 2000; 
     margin-right: 10px;
-    transition: ease 0.5s;
-    translate: 500px;
+    transition: ease 0.2s;
 
 }
 .perfildiv img{
